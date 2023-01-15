@@ -1,0 +1,258 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    
+    
+}
+:root{
+    --primary-color:#FF900E;
+    
+}
+.common-width{
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+    padding:30px 20px ;
+
+
+}
+
+
+.primary-btn{
+    width: 180px;
+    height: 64px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0 auto;
+   
+    
+   
+   
+} 
+.primary-btn:hover{
+    box-shadow: 10px 10px 5px  rgba(255, 143, 14, 0.525);
+    transform: scale(1.1);
+}
+
+/*---------- ------header-style------- */
+
+header{
+    background: rgba(255, 144, 14, 0.1);
+}
+.container{
+    
+    
+    display: flex;
+    font: var(--primary-font);
+    justify-content: space-between;
+    align-items: center;
+        
+}
+.container h3{
+    font-weight: 700;
+    font-size: 45px;
+}
+.nav-container{
+    display: flex;
+    list-style: none;
+    gap:20px;
+    font-weight: 500;
+    font-size: 1rem;
+    
+}
+.nav-container a{
+    text-decoration: none; 
+    color: #424242; 
+} 
+
+
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+    
+    text-align: center;
+}
+.banner-description{
+    padding-top: 30px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #727272a9;
+    text-align: center;
+    
+
+}
+.btn-1{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+.banner-img img{
+    margin-top: 30px;
+    width: 100%;
+    object-fit: cover;
+   
+    
+} 
+
+/* ---------------body-style------------------- */
+.section-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    gap: 5px;
+}
+.img-container img{
+    width: 100%;
+    
+
+}
+.section-title{
+    font-weight: 700;
+    font-size: 2.8rem;
+    
+} 
+.section-description{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.img-container-2 img{
+    width: 100%;
+    object-fit: contain;
+    flex-shrink: 0;
+    
+
+}
+.border-left{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.section2-box{
+    
+
+}
+.section2-box >.box{
+    background-color: rgba(240, 248, 255, 0.491);
+    border: none;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+.box-title{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.box-description{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #727272;
+}
+.button-3{
+    height: 180px;
+    width: 300px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    color:#FFFFFF
+
+}
+.button-3:hover{
+    box-shadow: 10px 10px 5px  rgba(255, 143, 14, 0.525);
+    transform: scale(1.1);
+
+}
+.secondary-button{
+    position: relative;
+    left: 90%;
+    bottom:70%
+}
+.box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+.box-container >.box{
+    border: 2px solid var(--primary-color);
+    padding: 40px 10px;
+    border-radius: 5px;
+    height: 200px;
+    width: 200px;
+    align-items: center;
+}
+.box-container >.box:hover{
+     
+    border: 2px solid rgb(0, 106, 255);
+}
+.icon-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+/*---------------- footer-style-------------------- */
+.footer{
+     margin-top: 50px;
+     background: #FFF4E7;
+     padding: 20px;
+     text-align: center;
+
+}
+
+
+
+/*-------------- responsive design-------------------- */
+@media screen and (max-width:600px) {
+    .container,.box-container  {
+         flex-direction: column;
+    }
+    .nav-container{
+        margin-top: 20px;
+        flex-direction: column;
+        
+    }
+    .section-container{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .second-button{
+        display: flex;
+        justify-content: center;
+    }
+    .secondary-button{
+     position: static; 
+     display: flex;
+     justify-content: center;  
+    }
+    .icon-container{
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+  
+    
+}
