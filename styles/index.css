@@ -212,12 +212,17 @@ header{
     justify-content: space-between;
     margin-top: 50px;
 }
+.icon-container>.icon img{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
 /*---------------- footer-style-------------------- */
 .footer{
-     margin-top: 50px;
+     margin-top: 30px;
      background: #FFF4E7;
      padding: 20px;
      text-align: center;
+     margin-bottom: 50px;
 
 }
 
